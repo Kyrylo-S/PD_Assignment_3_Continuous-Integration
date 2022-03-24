@@ -1,0 +1,181 @@
+<%- include('header'); -%>
+<%- include('nav'); -%>
+<section class="info">
+    <form name="myform" method="Post" onsubmit="return formSubmit();" action="" >
+      <table>
+        <tr>
+          <td>
+      <label>Name</label>
+      <input id="Name" placeholder="First Last" type="text" name="Name"><br/>
+      <label>Adress</label>
+      <input id="Street" placeholder="Street" type="text" name="Street"><br/>
+      <label>Appartment</label><input id="Appartment" placeholder="Unit/Appartment #" type="text" name="Appartment"><br/> 
+      <label>City</label>
+      <input id="City" placeholder="City" type="text" name="City"><br/>
+      <label>Phone</label>
+      <input id="Phone" placeholder="eg: 5198201234" type="text" name="Phone"><br/>
+      <label>Email</label>
+      <input id="Email" placeholder="eg: test@test.com" type="text" name="Email"><br/>
+      <label>Province</label>
+      <select name="Province" id="Province">       
+        <option value="Please choose">Please choose</option>
+        <option value="Alberta">Alberta</option>
+        <option value="BC">British Columbia</option>
+        <option value="Manitoba">Manitoba</option>
+        <option value="NB">New Brunswick</option>
+        <option value="NL">Newfoundland and Labrador</option>
+        <option value="NT">Northwest Territories</option>
+        <option value="NS">Nova Scotia</option>
+        <option value="Nunavut">Nunavut</option>
+        <option value="Ontario">Ontario</option>
+        <option value="PEI">Prince Edward Island</option>
+        <option value="Quebec">Quebec</option>
+        <option value="Saskatchewan">Saskatchewan</option>
+        <option value="Yukon">Yukon</option>        
+    </select>
+    <label id="Remark" name="Remark">*Please select a Province as pricing and any available credits vary based on your location.</label>
+   <br/><br/>
+      <input type="submit" value="Submit">
+      <p id="errors"></p>     
+      </td> 
+      <td>
+      <section class="Products" id="ProductsID">       
+        <table>
+          <tr>
+            <td>
+           <img src="images/ENCORE.jpg" id=EncoreImg>
+           <p>
+           costs $33,493
+           </p>       
+           yes    
+           <input name="Encore" id="Encore1" type="radio" value="yes" > 
+           no
+           <input name="Encore" id="Encore2" type="radio" value="no" checked="true">
+          </td>
+          </tr>           
+          <tr>
+          <td>
+           <img src="images/ENCLAVE.jpg" id=EnclaveImg>
+           <p>
+            costs $59,688
+           </p>           
+           yes
+           <input name="Enclave" id="Enclave1" type="radio" value="yes" > 
+           no
+           <input name="Enclave" id="Enclave2" type="radio" value="no" checked="true">
+          </td>
+          </tr>
+      
+          <tr>
+            <td>
+           <img src="images/TShirt.jpg" id="TShirtImg">
+           <p>
+           T-Shirt costs $9
+           </p>           
+           yes
+           <input name="TShirt" id="TShirt1" type="radio" value="yes" > 
+           no
+           <input name="TShirt" id="TShirt2" type="radio" value="no" checked="true">
+           </tr>
+          </td>  
+          
+           <tr>
+           <td>
+           <img src="images/Tyre.jpg" id="TyreImg">
+           <p>
+           Tyre costs $18
+           </p>    
+           yes
+           <input name="Tyre" id="Tyre1" type="radio" value="yes" > 
+           no
+           <input name="Tyre" id="Tyre2" type="radio" value="no" >      
+          </td>
+          </tr>        
+        </table>  
+      </section>
+      </tr>
+      </table>
+    </form>      
+</section>
+
+<section class="OutPut" id="OutPut">
+  <div class="formData">
+
+<%
+if (typeof(errors) != 'undefined')
+{
+  for (let error of errors)
+  {
+%>
+<p class='errors'> <%= error.msg %> </p>
+
+
+<%
+  }
+}
+if(typeof(err) != 'undefined')
+{
+%>
+
+  <p class='err'> <%= err %> </p>
+    <%
+
+}
+%>
+
+<!---->
+
+
+  
+  <%
+    if (typeof(total) != 'undefined')
+    {
+  %>
+    <p id="formResult">Your receipt:</p>
+    <table>
+      <tr>
+        <th>Name: </th>
+        <td> <%= name %> </td>
+      </tr>
+      <tr>
+        <th>Email: </th>
+        <td> <%= email %> </td>
+      </tr>
+      <tr>
+        <th>Street: </th>
+        <td> <%= street %> </td>
+      </tr>
+      <tr>
+        <th>City: </th>
+        <td> <%= city %> </td>
+      </tr>
+      <tr>
+        <th>Appartment: </th>
+        <td> <%= appartment %> </td>
+      </tr>
+      <tr>
+        <th>Products: </th>
+        <td> <%= products %> </td>
+      </tr>      
+        <th>Province: </th>
+        <td> <%= province %> </td>
+      </tr>
+      <tr>
+        <th>Tax: </th>
+        <td> $<%= tax %> </td>
+      </tr>
+      <tr>
+        <th>Total: </th>
+        <td> $<%= total %> </td>
+      </tr>
+    </table>
+    <%
+      }
+    %>
+  </div>
+</section>
+<footer>
+  &copy; 2021 General Motors of Canada Company
+</footer>
+</body>
+</html>

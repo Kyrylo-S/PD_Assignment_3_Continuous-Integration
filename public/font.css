@@ -1,0 +1,255 @@
+header
+{
+    text-align: center;
+    font-size: xx-large;
+    font-style: oblique;
+    font-family:fantasy;
+    text-shadow: #3f5864;
+    text-rendering: auto0;
+    text-decoration-color: #787c7e;
+     margin-bottom: -180px;
+}
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 800;
+    width: 1200px;
+    margin: 80px auto;   
+}
+#Logo 
+{ 
+max-width: 16%; 
+margin-left: 3em ;
+margin-top: -100px;
+margin-bottom: 45px;
+}
+
+.OutPut{
+    width: 48%;
+    float: left;     
+   }
+.clear{
+    clear: both;
+}
+
+#errors{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    padding: 10px;   
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+form, .formData{
+    width: 300px;   
+    border: 3px solid white;
+    box-shadow: 0 0 10px #2c2c2c;
+    padding: 35px;    
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+#Remark
+{
+font-size:medium;
+width: 350px;
+margin-top: 5px;
+margin-bottom: -5px;
+}
+.Products{
+    width: 750px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px #2c2c2c;
+    padding-left: 30px;
+    margin: 40px auto;
+    margin-top: -390px;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: block;
+    float: right;
+    padding-bottom: 3em;
+    position: absolute;
+}
+label{
+    width: 170px;
+    display: inline-block;
+    font-size: 21px;
+    color: white;
+}
+input:not([type="radio"]), select{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+}
+input:not([type="radio"]){
+    width: 170px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+select{
+    width: 190px;
+    margin-top: 10px;
+}
+input[type="submit"]{
+    width: 200px;
+    font-size: 22px;
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border: 0px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+}
+input[type="submit"]:active{
+ background-color: grey;
+}
+
+.top_menu{
+    background-color: black;
+    border: 3px solid white;
+    box-shadow: 0 0 10px #2c2c2c;
+    color: white;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+.top_menu ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;   
+    margin-top: -5px;    
+    height: 50px;
+}
+
+.top_menu ul li{
+    display: inline-block;
+    width: 130px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    padding-top: -10px;
+    font-size: x-large;
+    background-color: black;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.top_menu ul li:hover{
+    background-color: #787c7e;
+}
+.top_menu ul li a{
+    color: white;
+    font-weight: italic;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+footer
+{    
+    margin-top: 2100px;
+    text-align: center;
+    font-size: xx-large;   
+}
+#Logo, #wheel
+{
+    margin-top: 40px;
+    width: 12em;
+    height: 7em;
+}
+#EncoreImg, #TShirtImg, #TyreImg, #EnclaveImg
+{
+    width: 700px;
+    height: auto;
+    padding-top: 20px;
+}
+.rotated
+{
+    margin-left: 680px;
+    margin-top: -5em;
+    max-width: 12%;    
+    margin-bottom: 45px;    
+    border-radius: 100%;
+    border-image: round;  
+}
+.rotated {
+    animation: rotation 8s infinite;
+  
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);    
+    }
+  }
+  .neon {
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+      margin-left: 450px;
+      margin-top: -80px;
+      margin-bottom: 30px;
+      background-color: black;
+      width: 290px;
+      text-align: center;
+      font-weight: bolder;         
+  }
+
+#EncorePrice
+{
+    color: tomato;
+    font-weight: bold;
+}
+
+nav ul{ 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li{ 
+    display: inline-block; 
+    position: relative; 
+}
+
+nav ul li ul { 
+	width: 200px;
+	position: absolute; 
+	z-index: 999; 
+	text-align: left;
+	background-color: #890417;
+    box-shadow: 0 0 5px #800d29;
+}
+
+nav ul li ul li a{ 
+    color: white;
+    padding: 10px;
+    display: block; 
+}
+
+nav ul li ul li:hover a:hover{ 
+    color: #890417;
+    background-color: #f7e7d9;
+}
+
+nav ul li ul { 
+    display: none; 
+}
+
+nav ul li:hover ul{
+    display: block; 
+}
