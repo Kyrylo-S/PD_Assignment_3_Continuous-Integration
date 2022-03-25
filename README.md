@@ -3,9 +3,11 @@ The aim, purpose of the project is working “Buick” website.
 
 For more details please look to the "Manual for Buick project.pdf", 
 that is attached to this project with images of buttons, windows.
+And link on the GitHub: 
+https://github.com/Kyrylo-S/PD_Assignment_3_Continuous-Integration/blob/dev/Manual%20for%20Buick%20project.pdf
+
 
 Follow this steps to open the project:
-
 1. Open the repository using link below, push green “code” button: 
 https://github.com/Kyrylo-S/PD_Assignment_3_Continuous-Integration
 
