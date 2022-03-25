@@ -33,5 +33,5 @@ https://github.com/Kyrylo-S/PD_Assignment_3_Continuous-Integration
 
 9. Start debugging application pushing “Run” and “Start Debugging” buttons.
 
-
+Licensed under the [MIT License](LISENCE).
 
